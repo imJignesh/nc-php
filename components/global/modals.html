@@ -1,0 +1,371 @@
+    
+        <div class="uk-position-fixed" id="whats__new">
+            <a class="uk-text-uppercase"><span uk-height-viewport="min-height: 69">
+                    Sign up!!</span></a>
+            <div class="floting__popup uk-background-primary" uk-dropdown="mode: click;pos:right-top">
+
+                <ul class="uk-nav uk-dropdown-nav">
+                    <li><a uk-toggle="target: #corporate__modal" href="#">Corporate</a></li>
+                    <li><a uk-toggle="target: #individual__modal" href="#">Individual</a></li>
+                </ul>
+
+
+            </div>
+        </div>
+
+
+
+        <div id="corporate__modal" uk-modal>
+
+
+            <div class="uk-modal-dialog uk-modal-body">
+                <button class="uk-modal-close-default" type="button" uk-close></button>
+
+                <form id="form__corp">
+                    <fieldset class="uk-fieldset">
+
+                        <legend class="uk-legend">Corporte Account Registration</legend>
+
+                        <div class="uk-alert-danger error__list ">
+                            <div class="errors"></div>
+                        </div>
+
+                        <div class="uk-margin uk-inline uk-width-1-1">
+                            <span class="uk-form-icon " uk-icon="icon: users"></span>
+                            <input name="username" required title="Please enter your username (at least 3 characters)"
+                                minlength="3" class="uk-input" type="text" placeholder="Username">
+                            <span class="uk-text-primary uk-position-absolute star">*</span>
+                        </div>
+
+                        <div class="uk-margin uk-inline uk-width-1-1">
+                            <span class="uk-form-icon fa fa-envelope"></span>
+
+                            <input class="uk-input" type="email" placeholder="Email Address"
+                                title="Please enter a valid Email" name="email" required>
+                            <span class="uk-text-primary uk-position-absolute star">*</span>
+                        </div>
+                        <div class="uk-margin uk-inline uk-width-1-1">
+                            <span class="uk-form-icon fa fa-building"></span>
+
+                            <input class="uk-input" type="text" placeholder="Organization Name" required
+                                title="Please enter your Organization Name">
+                            <span class="uk-text-primary uk-position-absolute star">*</span>
+                        </div>
+
+
+
+                        <div class="uk-margin uk-inline uk-width-1-1">
+                            <div uk-form-custom class="uk-width-1-1">
+                                <span class="uk-form-icon " uk-icon="icon: more"></span>
+                                <input type="file">
+                                <button class="uk-button uk-button-secondary uk-width-1-1" type="button"
+                                    tabindex="-1">Upload Organization Logo</button>
+                            </div>
+                        </div>
+
+                        <div class="uk-margin uk-inline uk-width-1-1">
+                            <span class="uk-form-icon " uk-icon="icon: lock"></span>
+                            <input class="uk-input" id="password_corp" type="password" name="password"
+                                placeholder="Password" title="Please enter your password, between 5 and 12 characters"
+                                required minlength="5">
+                            <span class="uk-text-primary uk-position-absolute star">*</span>
+                            <a class="uk-form-icon uk-form-icon-flip fa fa-eye passwordtoggle" href="#"></a>
+
+                        </div>
+                        <div class="uk-margin uk-inline uk-width-1-1">
+                            <span class="uk-form-icon " uk-icon="icon: lock"></span>
+                            <input class="uk-input" type="password" name="repeat_password" placeholder="Repeat Password"
+                                title="Passwords should match">
+                            <span class="uk-text-primary uk-position-absolute star">*</span>
+                        </div>
+
+                        <div class="uk-margin uk-grid-small " uk-grid>
+
+                            <div class="uk-width-1-2@s">
+                                <input class="uk-input" type="text" placeholder="Enter OTP" required title="Enter OTP">
+                            </div>
+                            <div class="uk-width-1-2@s">
+                                <button type="button" class="uk-button uk-button-secondary uk-width-1-1">Get
+                                    OTP</button>
+                            </div>
+                        </div>
+
+
+
+                        <div class="uk-margin uk-grid-small ">
+
+                            <img src="images/robot.png" alt="captcha" />
+                        </div>
+                        <div class="uk-margin uk-grid-small uk-font-small">
+
+
+                            <label><input id="agree_c" name="agree_c" required title="Please agree the terms"
+                                    class="uk-checkbox" type="checkbox" checked> I accept the <a href="#"
+                                    target="_blank">Terms of Use</a> & <a href="#" target="_blank">Privacy Policy</a>.
+                            </label>
+                        </div>
+
+
+                        <div class="uk-margin uk-flex uk-flex-between ">
+
+                            <div class="uk-flex-left uk-width-expand uk-font-small"><span
+                                    class="uk-text-primary">*</span> Mandatory
+                                Fields</div>
+                            <button class="uk-button uk-button-primary uk-flex-right submit" type="submit">Register
+                                Now <span uk-spinner></span> </button>
+                        </div>
+
+                    </fieldset>
+                </form>
+
+
+            </div>
+
+
+        </div>
+
+        <div id="individual__modal" uk-modal>
+            <div class="uk-modal-dialog uk-modal-body">
+                <button class="uk-modal-close-default" type="button" uk-close></button>
+
+                <form id="form__user">
+                    <fieldset class="uk-fieldset">
+
+                        <legend class="uk-legend">User Account Registration</legend>
+
+                        <div class="uk-alert-danger error__list ">
+                            <div class="errors"></div>
+                        </div>
+
+
+                        <div class="uk-margin uk-text-center">
+                            Register Using :
+                            <a href="" class="uk-icon-button  " uk-icon="facebook"></a>
+                            <a href="" class="uk-icon-button " uk-icon="twitter"></a>
+                            <a href="" class="uk-icon-button" uk-icon="linkedin"></a>
+                            <a href="" class="uk-icon-button" uk-icon="google"></a>
+
+                            <hr class="uk-divider-icon">
+                        </div>
+
+
+                        <div class="uk-margin uk-inline uk-width-1-1">
+                            <span class="uk-form-icon" uk-icon="icon: user"></span>
+
+                            <input name="username" required title="Please enter your username (at least 3 characters)"
+                                minlength="3" class="uk-input" type="text" placeholder="Username">
+                            <span class="uk-text-primary uk-position-absolute star">*</span>
+                        </div>
+
+                        <div class="uk-margin uk-inline uk-width-1-1">
+                            <span class="uk-form-icon fa fa-envelope"></span>
+
+                            <input class="uk-input" type="email" placeholder="Email Address"
+                                title="Please enter a valid Email" name="email" required>
+                            <span class="uk-text-primary uk-position-absolute star">*</span>
+                        </div>
+
+                        <div class="uk-margin uk-inline uk-width-1-1">
+                            <span class="uk-form-icon" uk-icon="icon: more"></span>
+
+                            <div uk-form-custom class="uk-width-1-1">
+                                <input type="file">
+                                <button class="uk-button uk-button-secondary uk-width-1-1" type="button"
+                                    tabindex="-1">Profile
+                                    Photo</button>
+                            </div>
+                        </div>
+
+                        <div class="uk-margin uk-inline uk-width-1-1">
+                            <span class="uk-form-icon" uk-icon="icon: lock"></span>
+
+
+                            <input class="uk-input" id="password_user" type="password" name="password"
+                                placeholder="Password" title="Please enter your password, between 5 and 12 characters"
+                                required minlength="5">
+                            <span class="uk-text-primary uk-position-absolute star">*</span>
+                            <a class="uk-form-icon uk-form-icon-flip fa fa-eye passwordtoggle" href="#"></a>
+                        </div>
+                        <div class="uk-margin uk-inline uk-width-1-1">
+                            <span class="uk-form-icon" uk-icon="icon: lock"></span>
+
+                            <input class="uk-input" type="password" name="repeat_password" placeholder="Repeat Password"
+                                title="Passwords should match">
+                            <span class="uk-text-primary uk-position-absolute star">*</span>
+                        </div>
+
+                        <div class="uk-margin uk-grid-small " uk-grid>
+
+                            <div class="uk-width-1-2@s">
+                                <input class="uk-input" type="text" placeholder="Enter OTP" required title="Enter OTP">
+                            </div>
+                            <div class="uk-width-1-2@s">
+                                <button type="button" class="uk-button uk-button-secondary uk-width-1-1">Get
+                                    OTP</button>
+                            </div>
+                        </div>
+
+                        <div class="uk-margin uk-grid-small ">
+
+                            <img src="images/robot.png" alt="captcha" />
+                        </div>
+
+                        <div class="uk-margin uk-grid-small uk-font-small">
+
+                            <label><input id="agree_i" name="agree_i" required title="Please agree the terms"
+                                    class="uk-checkbox required" type="checkbox" checked> I accept the <a href="#"
+                                    target="_blank">Terms of Use</a> & <a href="#" target="_blank">Privacy Policy</a>.
+                            </label>
+
+                        </div>
+                        <div class="uk-margin uk-flex uk-flex-between ">
+
+                            <div class="uk-flex-left uk-width-expand uk-font-small"><span
+                                    class="uk-text-primary">*</span> Mandatory
+                                Fields</div>
+                            <button class="uk-button uk-button-primary uk-flex-right submit" type="submit">Register
+                                Now <span uk-spinner></span> </button>
+                        </div>
+
+                    </fieldset>
+                </form>
+
+
+            </div>
+        </div>
+
+
+        <div id="signin__modal" uk-modal>
+
+
+            <div class="uk-modal-dialog uk-modal-body">
+                <button class="uk-modal-close-default" type="button" uk-close></button>
+
+                <form id="form__login">
+                    <fieldset class="uk-fieldset">
+
+                        <legend class="uk-legend">Sign in</legend>
+
+
+                        <div class="uk-alert-danger error__list ">
+                            <div class="errors"></div>
+                        </div>
+
+
+                        <div class="uk-margin uk-text-center">
+                            Login Using :
+                            <a href="" class="uk-icon-button  " uk-icon="facebook"></a>
+                            <a href="" class="uk-icon-button " uk-icon="twitter"></a>
+                            <a href="" class="uk-icon-button" uk-icon="linkedin"></a>
+                            <a href="" class="uk-icon-button" uk-icon="google"></a>
+
+
+
+                            <hr class="uk-divider-icon">
+                        </div>
+                        <div class="uk-margin uk-inline uk-width-1-1">
+                            <span class="uk-form-icon" uk-icon="icon: user"></span>
+
+                            <input name="username" class="uk-input" type="text" placeholder="Username"
+                                title="Please enter your username (at least 3 characters)" required minlength="3">
+                        </div>
+
+
+
+                        <div class="uk-margin uk-inline uk-width-1-1">
+                            <span class="uk-form-icon" uk-icon="icon: lock"></span>
+
+                            <input name="password" class="uk-input" type="password" placeholder="Password"
+                                title="Please enter your password, between 5 and 12 characters" required minlength="5">
+                            <a class="uk-form-icon uk-form-icon-flip fa fa-eye passwordtoggle" href="#"></a>
+                        </div>
+
+                        <div class="uk-margin uk-flex uk-flex-between uk-flex-wrap">
+                            <div class="uk-flex-right "> <input class="uk-checkbox" type="checkbox">
+                                Remember me</div>
+
+                            <div class="uk-flex-left"><a class="uk-font-primary" href="#"
+                                    uk-toggle="target: #forgot__modal">Forgot Password ?</a> </div>
+
+                        </div>
+
+                        <div class="uk-margin uk-flex uk-flex-between">
+                            <div class="uk-flex-right">
+                                <button class=" uk-button uk-button-primary submit" type="submit">Sign in <span
+                                        uk-spinner></span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <hr class="uk-divider-icon">
+                        <div class="uk-margin uk-text-center">
+
+                            <h3 class="uk-margin-remove uk-h4">Don't Have an account?</h3>
+                            <p class="uk-margin-small">Create New Account</p>
+                            <a class="uk-button uk-button-small uk-button-primary  uk-border-pill uk-margin-small"
+                                href="#" uk-toggle="target: #corporate__modal"><span>Corporate</span>
+                            </a>
+                            <a class="uk-button uk-button-small uk-button-primary uk-border-pill uk-margin-small-left@m uk-margin-small"
+                                href="#" uk-toggle="target: #individual__modal"><span>Individual</span></a>
+                        </div>
+
+                    </fieldset>
+                </form>
+
+
+            </div>
+
+
+        </div>
+
+        <div id="forgot__modal" uk-modal>
+
+
+            <div class="uk-modal-dialog uk-modal-body">
+                <button class="uk-modal-close-default" type="button" uk-close></button>
+
+                <form id="form__recover">
+                    <fieldset class="uk-fieldset">
+
+                        <legend class="uk-legend">Recover Password</legend>
+
+
+
+                        <div class="uk-alert-danger error__list ">
+                            <div class="errors"></div>
+                        </div>
+
+                        <p>Please enter your username or email address. You will receive a link to create a new password
+                            via email.
+
+                        </p>
+
+
+                        <div class="uk-margin">
+                            <input name="user" class="uk-input" type="text" placeholder="Email/username"
+                                title="Please enter your email or username" required minlength="3">
+                        </div>
+
+
+
+                        <div class="uk-margin uk-flex uk-flex-between">
+                            <div class="uk-flex-right">
+                                <button class=" uk-button uk-button-primary submit" type="submit">Reset Password <span
+                                        uk-spinner></span>
+                                </button>
+                            </div>
+                        </div>
+                        <hr class="uk-divider-icon" />
+                        <div class="uk-text-center">
+                            Already have an account? <a href="#" uk-toggle="target: #signin__modal">Login instead</a>
+                        </div>
+
+                    </fieldset>
+                </form>
+
+
+            </div>
+
+
+        </div>
+

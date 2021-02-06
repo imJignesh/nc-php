@@ -1,0 +1,308 @@
+{{ include('header/header.html') }}
+
+
+      <!-- Blog Posts -->
+        <div class="uk-section-full" id="profile_posts">
+            <div class="uk-container">
+
+
+                <div class="uk-flex ">
+                   
+                    {{ include('profile/profile__menu.html') }}
+
+
+                    <div class="uk-width-expand uk-padding-small uk-padding-remove-top profile__page">
+                        <div class="uk-card uk-card-default profile__header "
+                            uk-sticky="bottom: #profile_posts;offset: 50">
+                            <div class="uk-position-relative">
+                            <h4 class="uk-margin-remove-top">My Content</h4>
+                         <!--comment-- // added what's new button for mobile  button -->
+
+                            <a href="#ofcanvasnew" uk-toggle  class="uk-align-right uk-position-absolute mobile__new uk-hidden@m">
+                                 What's <br/>Happening
+                            </a>
+                        </div>
+                        </div>
+
+
+                    
+
+                      
+
+                        <div class="uk-overflow-auto">
+                            <table class="uk-table uk-table-hover uk-table-divider uk-table-middle">
+                                <thead>
+                                    <tr>
+
+                                        <th class="uk-table-shrink" style="width:60px">Image</th>
+                                        <th class="uk-table-shrink">Date</th>
+
+                                        <th class="uk-table-expand">Title</th>
+                                        <th class="uk-table-shrink">Status</th>
+                                        <th class="uk-table-shrink uk-text-nowrap uk-text-center">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><img class="uk-preserve-width" src="https://chimpzlab.tech/img/100x100?12d" width="40" alt=""></td>
+                                        <td>October 14,2020</td>
+                                        <td class="uk-text-truncate">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. </td>
+                                        <td class="uk-text-nowrap">Published </td>
+                                        <td class="uk-text-nowrap uk-text-right action__buttons">
+                                            <a uk-tooltip="title: Edit" class="uk-button uk-button-primary uk-border-circle uk-padding-small"><i class="fa fa-pen"></i></a>
+                                            <a uk-tooltip="title: View" class="uk-button uk-button-primary uk-border-circle"><i class="fa fa-eye"></i></a>
+                                            <a uk-tooltip="title: Delete" class="uk-button uk-button-danger uk-border-circle"><i class="fa fa-trash"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><img class="uk-preserve-width" src="https://chimpzlab.tech/img/100x100?12brd" width="40" alt=""></td>
+                                        <td>October 14,2020</td>
+                                        <td class="uk-text-truncate">Lorem ipsum dolor sit amet, elit, sed do eiusmod tempor. </td>
+                                        <td class="uk-text-nowrap">Published </td>
+                                        <td class="uk-text-nowrap uk-text-right action__buttons">
+                                            <a uk-tooltip="title: Edit" class="uk-button uk-button-primary uk-border-circle uk-padding-small"><i class="fa fa-pen"></i></a>
+                                            <a uk-tooltip="title: View" class="uk-button uk-button-primary uk-border-circle"><i class="fa fa-eye"></i></a>
+                                            <a uk-tooltip="title: Delete" class="uk-button uk-button-danger uk-border-circle"><i class="fa fa-trash"></i></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <ul class="uk-pagination uk-flex-center" uk-margin>
+                            <li><a href="#"><span uk-pagination-previous></span></a></li>
+                            <li><a href="#">1</a></li>
+                            <li class="uk-disabled"><span>...</span></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">6</a></li>
+                            <li class="uk-active"><span>7</span></li>
+                            <li><a href="#">8</a></li>
+                            <li><a href="#"><span uk-pagination-next></span></a></li>
+                        </ul>
+                        
+                      
+                        
+
+                    
+
+
+
+                    </div>
+
+                   
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+        <div id="profile__modal" uk-modal>
+
+
+            <div class="uk-modal-dialog uk-modal-body">
+                <button class="uk-modal-close-default" type="button" uk-close></button>
+    
+                <form id="form__profile">
+                    <fieldset class="uk-fieldset">
+    
+                        <!-- <legend class="uk-legend">Edit Profile</legend> -->
+    <!-- <br/> -->
+    <div class="uk-alert-danger error__list ">
+        <div class="errors"></div>
+    </div>
+    <ul class="uk-tab uk-clearfix"
+    data-uk-tab="{connect:#profile_edit, animation: uk-animation-fade}">
+    <li class="uk-active"><a href="#basic">Basic Information</a></li>
+    <li><a href="#password">Password</a></li>
+    </ul>
+    <ul class="uk-width-1-1@s uk-switcher " data-uk-switcher="{active:1}">
+        <li>
+            <div id="profile_posts">
+                <div class="uk-position-relative">
+                    <div class="uk-cover-container uk-height-small profile__cover">
+                        <img src="https://chimpzlab.tech/img/800x150" alt="" uk-cover>
+                        <div class="js-upload uk-position-top-right " uk-form-custom>
+                            <input type="file" >
+                            <button class="cover__upload uk-button uk-button-primary uk-border-pill uk-button-small" type="button" tabindex="-1"> <i class="fa fa-file-upload"></i> Upload</button>
+                        </div>
+                        
+                    </div>
+                    <div class="profile__avatar uk-card uk-card-default  uk-position-bottom-left">
+                        <img class="uk-width-small" src="https://chimpzlab.tech/img/200x200" alt="">
+                        <div class="js-upload uk-overlay-default uk-position-cover" uk-form-custom>
+                            <input type="file">
+                            <button class="uk-button uk-button-default uk-position-center" type="button" tabindex="-1"><i class="fa fa-image"></i></button>
+                        </div>
+                        
+                    </div>
+                </div>
+    
+    
+                <div class="uk-flex">
+    
+                    <div class="uk-width-expand uk-padding-small uk-padding-remove-right">
+                     
+                    </div>
+                </div>
+    
+            </div>
+             
+    
+                <div class="uk-margin uk-inline uk-width-1-1 ">
+                    <br/>
+                    <label>Username: <strong>@johndoe1221</strong> (can't be changed)</label>
+                    <br/>
+                </div> 
+             
+                <div class="uk-margin uk-flex">
+                <div class="uk-margin uk-inline uk-width-1-2">
+    
+                    <input name="firstname" class="uk-input" type="text" placeholder="First Name"
+                        title="Please enter your Name (at least 3 characters)" required minlength="3">
+                </div>
+                
+                <div class="uk-margin uk-inline uk-width-1-2">
+    
+                    <input name="lastname" class="uk-input" type="text" placeholder="Last Name"
+                        title="Please enter your Last Name (at least 3 characters)" required minlength="3">
+                </div>
+                </div>
+               <div class="uk-margin uk-inline uk-width-1-1">
+                    <input name="p_email" class="uk-input" type="text" placeholder="Email" required title="Please enter valid email">
+                </div>
+                <div class="uk-margin uk-inline uk-width-1-1">
+                    <textarea name="bio" class="uk-textarea" type="text" placeholder="Bio" rows="4"></textarea>
+                
+                </div>  
+                <div class="uk-margin  uk-grid" >
+                    <div class="uk-width-1-2">
+    
+                    <input name="p_orgname" class="uk-input " type="text" placeholder="Organization Name">
+                    </div>
+                    <div class="uk-width-1-2">
+                        <select class="uk-select">
+                            <option>Who can see this field</option>
+                            <option>Everyone</option>
+                            <option>Only Me</option>
+                            <option>All Members</option>
+                        </select>
+                        </div>
+                     
+                          
+                </div>   
+                
+                <div class="uk-margin  uk-grid" >
+                    <div class="uk-width-1-2">
+    
+                    <input name="p_designation" 
+                        minlength="3" class="uk-input" type="text" placeholder="Designation">
+                    </div>
+                    <div class="uk-width-1-2">
+                        <select class="uk-select">
+                            <option>Who can see this field</option>
+                            <option>Everyone</option>
+                            <option>Only Me</option>
+                            <option>All Members</option>
+                        </select>
+                        </div>
+                </div>
+                    
+                <div class="uk-margin  uk-grid" >
+                    <div class="uk-width-1-2">
+    
+                    <input name="p_aoi" 
+                        minlength="3" class="uk-input" type="text" placeholder="Area of interest">
+                    </div>
+                    <div class="uk-width-1-2">
+                        <select class="uk-select">
+                            <option>Who can see this field</option>
+                            <option>Everyone</option>
+                            <option>Only Me</option>
+                            <option>All Members</option>
+                        </select>
+                        </div>
+                </div>
+                <br/>
+                <strong>EXTERNAL LINKS</strong>
+                
+          
+    
+    <div class="uk-margin">
+    <div class="uk-form-controls">
+        <input class="uk-input" id="p_facebook" type="text" placeholder="Facebook">
+    </div>
+    </div>  <div class="uk-margin">
+    <div class="uk-form-controls">
+        <input class="uk-input" id="p_twitter" type="text" placeholder="Twitter">
+    </div>
+    </div>  <div class="uk-margin">
+    <div class="uk-form-controls">
+        <input class="uk-input" id="p_linkedin" type="text" placeholder="Linkedin">
+    </div>
+    </div>  <div class="uk-margin">
+    <div class="uk-form-controls">
+        <input class="uk-input" id="p_youtube" type="text" placeholder="Youtube">
+    </div>
+    </div>  <div class="uk-margin">
+    <div class="uk-form-controls">
+        <input class="uk-input" id="p_pintrest" type="text" placeholder="Pintrest">
+    </div>
+    </div> <div class="uk-margin">
+    <div class="uk-form-controls">
+        <input class="uk-input" id="p_site" type="text" placeholder="Website">
+    </div>
+    </div>            
+    <br/>
+    
+        </li>
+        <li>
+            <strong>CHANGE PASSWORD</strong>
+    
+    <div class="uk-margin uk-inline uk-width-1-1">
+    
+        <input class="uk-input" type="password" name="old_password" placeholder="Old Password"
+            title="Passwords should match">
+    </div>
+    <div class="uk-margin uk-inline uk-width-1-1">
+    
+    
+        <input class="uk-input" id="password_profile" type="password" name="password"
+            placeholder="Password" title="Please enter your password, between 5 and 12 characters"
+             minlength="5">
+        <a class="uk-form-icon uk-form-icon-flip fa fa-eye passwordtoggle" href="#"></a>
+    </div>
+    <div class="uk-margin uk-inline uk-width-1-1">
+    
+        <input class="uk-input" type="password" name="repeat_password" placeholder="Repeat Password"
+            title="Passwords should match">
+    </div>
+    
+        </li>
+        </ul>
+                    
+    
+    
+                        <div class="uk-margin uk-flex uk-flex-between">
+                            <div class="uk-flex-right">
+                                <button class=" uk-button uk-button-primary submit" type="submit">Save <span
+                                        uk-spinner></span>
+                                </button>
+                            </div>
+                        </div>
+    
+                    
+    
+                    </fieldset>
+                </form>
+    
+    
+            </div>
+    
+    
+        </div>
+
+        
+        <!-- End Blog Posts -->
+        {{ include('footer/footer.html') }}

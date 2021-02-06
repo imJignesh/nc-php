@@ -1,0 +1,236 @@
+#masthead {
+    font-weight: 500;
+
+    .pre__header {
+        z-index: 981;
+    }
+    .uk-subnav{
+        .uk-active{
+            a{
+                color:#333;
+            }
+        }
+        a{color:#fff;}
+    }
+    .uk-background-primary {
+        background-color: #951b28;
+        ;
+        padding: 5px;
+    }
+
+    .uk-background-secondary {
+        padding: 5px;
+    }
+
+    .header__socialicons {
+        display: block !important;
+    }
+
+    .header__socialicons[hidden] {
+        @media(max-width:480px) {
+            display: none !important;
+        }
+    }
+
+    #site_search {
+        font-size: 14px;
+        font-style: italic;
+    }
+
+    #register__bar {
+        font-weight: 500;
+        min-width: 240px;
+
+        @media(max-width:640px) {
+            min-width: 50px;
+        }
+    }
+
+    #register__menu {
+
+        &.uk-open {
+
+            min-width: 240px;
+        }
+
+        top: 0 !important;
+        // left: -20px !important;
+        margin: 0;
+        z-index: 2;
+        overflow: hidden;
+        border-radius: 20px;
+        box-shadow: 0 0 0;
+        padding: 0;
+
+        a {
+            width: 50%;
+            float: left;
+            box-sizing: border-box;
+            text-align: center;
+            padding: 0 10px;
+            margin: 0;
+            background: #78141e;
+            color:#fff;
+            span {
+                font-weight: 500;
+            }
+
+            &:first-child {
+                border-right: 2px solid $primary-color;
+            }
+        }
+
+        @media(max-width:640px) {
+            left: auto !important;
+            right: -10px !important;
+            min-width: 240px;
+        }
+
+    }
+
+    .uk-button-small {
+        @media(max-width:640px) {
+            padding: 0 8px;
+        }
+    }
+
+}
+
+.menu_secondary {
+    min-height: 40px;
+    ;
+}
+
+.mobile__nav {
+    line-height: 30px;
+    color:$primary-color;
+    top:5px;
+    position: relative;
+    &:hover {
+        text-decoration: none !important;
+        color:$primary-color;
+    }
+}
+
+#community_nav {
+    margin: 0;
+    padding: 0 20px;
+    max-height: 40px;
+    overflow: hidden;
+
+    li {
+        a {
+            padding: 0px 10px;
+            font-size: 14px;
+            color: #555;
+            font-weight: 700;
+            transition: all 0.2s ease-in;
+
+            &:hover {
+                text-decoration: none;
+                color: $primary-color;
+            }
+        }
+
+    }
+
+    .slick-prev,
+    .slick-next {
+        padding: 0;
+        background: transparent;
+        width: 20px;
+        height: 25px;
+        line-height: 25px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+
+}
+
+.uk-offcanvas-bar {
+    ul {
+        width: 100%;
+
+        li {
+            text-align: left;
+            border-bottom: 1px solid #555;
+
+            a {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.nav__profile {
+    &:hover {
+        color: #fff !important;
+        text-decoration: none !important;
+    }
+}
+
+.notification__bar {
+    min-width: 300px;
+
+    .scroller {
+        max-height: 280px;
+        padding-right: 10px;
+    }
+}
+
+.notification-item {
+    color: #555;
+    font-size: 12px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 6px !important;
+
+    a {
+        color: #444;
+    }
+
+    >a {
+        color: #444;
+
+        span {
+            border-radius: 14px;
+            ;
+            padding: 5px;
+        }
+
+        &:hover {
+            span {
+                background: #ddd;
+                ;
+            }
+
+        }
+    }
+
+    .notification-content {
+        span {
+            display: block;
+            color: #000
+        }
+    }
+}
+
+.nav__create {
+    @media(max-width:840px) {
+        display: none;
+    }
+}
+
+.nav__profile {
+    span {
+        @media(max-width:840px) {
+            display: none;
+        }
+    }
+}
+
+.header__ad{
+    @media(max-width:640px) {
+        margin-top:20px
+    }
+}

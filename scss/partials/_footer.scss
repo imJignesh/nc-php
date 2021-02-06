@@ -1,0 +1,40 @@
+#colophon {
+    .uk-background-primary {
+        @media(min-width:640px) {
+            padding: 40px 0;
+        }
+    }
+
+    .footer__bg {
+        background-image: url(../images/footer_bg.png);
+
+        @media(max-width:640px) {
+            background-size: cover;
+        }
+    }
+    li.spacer{height:25px;
+        @media (max-width:640px) {display: none !important;;}
+    }
+ .uk-list{
+     @media (max-width:640px) {
+        text-align: center;
+        margin: 0;
+
+        li{display: inline-block; padding: 0 5px; font-size:12px;;}    
+     }
+     
+ }
+    h4{
+        @media (max-width:640px) {
+            text-align: center;
+            margin:5px 0 0 0;
+        }
+
+    }
+    form{
+        @media (max-width:640px) {
+            margin-top:10px !important
+        }
+    }
+
+}

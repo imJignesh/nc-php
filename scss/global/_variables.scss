@@ -1,0 +1,175 @@
+//Varibles 
+
+$primary-color:#961b27;
+$secondary-color:#50284f;
+$third-color:#e9ab01;
+$forth-color:#2a98da;
+$font-color:#555;
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #fff;
+}
+
+p {
+    font-size: 14px;
+}
+
+.uk-h1,
+.uk-h2,
+.uk-h3,
+.uk-h4,
+.uk-h5,
+.uk-h6,
+.uk-heading-2xlarge,
+.uk-heading-large,
+.uk-heading-medium,
+.uk-heading-small,
+.uk-heading-xlarge,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.uk-h2,
+h2 {
+    font-size: 36px;
+
+    @media(max-width:1100px) {
+        font-size: 30px;
+    }
+
+    @media(max-width:640px) {
+        font-size: 25px;
+    }
+}
+
+
+
+
+.uk-text-primary {
+    color: #961b27 !important;
+}
+
+.uk-background-primary {
+    background-color: #961b27;
+}
+
+.uk-button-primary {
+    background-color: #75111a;
+    &:hover{
+        background:$third-color;
+    }
+}
+
+.uk-navbar-item,
+.uk-navbar-nav>li>a,
+.uk-navbar-toggle {
+    min-height: 40px;
+}
+
+.uk-background-secondary {
+    background: $secondary-color;
+}
+
+.uk-overlay-primary {
+    background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7));
+}
+
+.uk-section {
+    padding: 20px 0;
+}
+
+.uk-input,
+.uk-select:not([multiple]):not([size]) {
+    height: 35px;
+}
+
+.uk-modal-dialog {
+    max-width: 400px !important;
+
+    form {
+        margin: 0 auto;
+        max-width: 300px;
+
+        .uk-margin {
+            margin-top: 10px !important;
+        }
+
+        font-size: 14px;
+
+        .uk-font-small {
+            font-size: 12px;
+        }
+
+        .uk-button {
+            line-height: 33px;
+        }
+    }
+}
+
+html .uk-button {
+    text-transform: inherit;
+}
+
+html .uk-legend {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #333
+}
+
+.uk-divider-icon {
+    margin: 5px 0;
+}
+
+.uk-slidenav {
+    width: 30px;
+    height: 30px;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.post__list {
+    .uk-margin-small-left {
+        margin-left: 20px !important
+    }
+}
+
+.scrollbar-thumb {
+    background: rgba(25, 25, 25, 0.09) !important
+}
+
+.scrollbar-track {
+    background: #f5f5f5 !important
+}
+
+.uk-border-right {
+    @media(min-width:960px) {
+        border-right: 1px solid #efefef;
+    }
+
+}
+
+.uk-subnav a {
+    text-transform: none !important;
+    font-weight: 700;
+}
+
+.uk-dropdown-nav {
+    a {
+        font-weight: 600;
+    }
+}
+
+.star {
+    margin: 0px 0px 0 -10px;
+}

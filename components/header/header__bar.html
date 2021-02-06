@@ -1,0 +1,66 @@
+<div uk-sticky class="uk-section uk-background-primary uk-padding-small pre__header">
+    <div class="uk-container">
+        <div class="uk-flex uk-width-1-1 uk-flex-middle">
+            <div class="uk-flex-left  uk-flex-middle nav-overlay header__socialicons">
+                <ul class="uk-iconnav uk-light">
+                    <li class="uk-visible@s	">Follow us</li>
+
+                    <li><a href="#" uk-icon="icon: facebook" class="uk-icon"></a></li>
+                    <li><a href="#" uk-icon="icon: twitter" class="uk-icon"></a></li>
+                    <li><a href="#" uk-icon="icon: linkedin" class="uk-icon"></a></li>
+                </ul>
+            </div>
+            <div class="uk-navbar-right nav-overlay uk-position-relative" id="register__bar">
+
+                <div class="uk-inline uk-position-relative" id="register__bar">
+                    <a class="uk-button uk-button-small uk-button-primary  uk-border-pill" href="#"
+                        uk-toggle="target: #signin__modal"><i uk-icon="sign-in"></i> <span
+                            class="uk-visible@s">Sign in</span> </a>
+
+                    <a type="button"
+                        class="uk-button uk-button-small uk-button-primary uk-border-pill uk-margin-small-left"
+                        href="#"><i uk-icon="pencil"></i> <span class="uk-visible@s">Register</span></a>
+
+                    <div id="register__menu"
+                        uk-dropdown="pos:top-right;animation:uk-animation-slide-right-small;"
+                        class="uk-border-pill uk-light uk-position-absolute uk-background-primary uk-padding-remove-vertical uk-animation-fast uk-button-group">
+                        <a class="uk-button uk-button-small uk-button-primary  " href="#"
+                            uk-toggle="target: #corporate__modal"><span>Corporate</span>
+                        </a>
+                        <a class="uk-button uk-button-small uk-button-primary" href="#"
+                            uk-toggle="target: #individual__modal"><span>Individual</span></a>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="nav-overlay uk-navbar-right uk-light uk-margin-remove-left">
+
+                <a class="uk-navbar-toggle" uk-search-icon
+                    uk-toggle="target: .nav-overlay; animation: uk-animation-fade;" href="#"></a>
+
+            </div>
+
+            <div class="nav-overlay uk-navbar-left uk-flex-1 uk-light" hidden>
+
+                <div class="uk-navbar-item uk-width-expand uk-light uk-autocomplete uk-form">
+                    <form class="uk-search uk-search-navbar uk-width-1-1 ">
+                        <div class="uk-autocomplete">
+                            <input id="site_search" class="uk-search-input" type="search"
+                                placeholder="Try searching for people,topics or keywords" autofocus
+                                maxlength="30">
+
+                        </div>
+                    </form>
+
+                </div>
+
+                <a class="uk-navbar-toggle " uk-close
+                    uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a>
+
+            </div>
+        </div>
+    </div>
+</div>

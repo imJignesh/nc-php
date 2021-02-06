@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    {{ include('header/header__meta.html') }}
+    <body>
+        {{ include('header/header__mobile_nav.html') }}
+
+        <div id="site">
+            <!-- Header  -->
+            <header id="masthead">
+                {% if menu=="profile.html" %} {{ include('header/header__bar_loggedin.html') }} {% else %} {{ include('header/header__bar.html') }} {% endif %}               
+                {{ include('header/header__nav.html') }}
+            </header>
+            <!-- End Header  -->
+            {{ include('header/header__nav_community.html') }}

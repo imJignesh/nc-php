@@ -1,0 +1,36 @@
+<div class="uk-section uk-padding-small">
+    <div class="uk-container">
+        <div class="uk-grid uk-flex-middle uk-position-relative">
+            <div class="uk-width-1-4@m uk-text-left">
+                <a href="index.html" class="uk-logo">
+                    <img src="images/nasscom_community_logo.png" alt="logo" />
+                </a>
+            </div>
+            <!--comment-- // added this section for mobile navigation-->
+            <div class="uk-position-top-right uk-hidden@s">
+            <a class="uk-margin-small-left mobile__nav " href="#ofcanvas" uk-toggle>
+                MENU <span uk-icon="menu"></span> 
+            </a>
+            </div>
+            <div class="uk-width-3-4@m uk-text-right header__ad">
+                <div class=""><img src="http://chimpzlab.tech/img/900x100" alt="advertise" /></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--comment-- // added uk-visible@s class in below line removed mobile__nav div-->
+<div class="uk-section uk-background-primary  uk-light uk-padding-small menu_secondary uk-visible@s">
+    <div class="uk-container uk-position-relative">
+        <div class="">
+            <ul class="uk-subnav  uk-margin-remove-vertical uk-subnav-pill">
+                <li {% if menu == "events.html" %}class="uk-active"{% endif %}><a href="events.html" class="">Events</a></li>
+                <li {% if menu == "reports.html" %}class="uk-active"{% endif %}><a href="reports.html">Reports</a></li>
+                <li {% if menu == "communities.html" %}class="uk-active"{% endif %}><a href="communities.html">Communities</a></li>
+                <li {% if menu == "news.html" %}class="uk-active"{% endif %}><a href="news.html">News</a></li>
+                {% if menu == "profile.html" or menu == "foryou.html"  or menu=="mycontent.html" or menu=="notifications.html" %} <li {% if menu == "foryou.html" %}class="uk-active"{% endif %}><a href="foryou.html">For You</a></li>{% endif %}
+            </ul>
+        </div>
+
+
+    </div>
+</div>
