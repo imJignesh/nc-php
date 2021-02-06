@@ -80,3 +80,13 @@ span{
 .comm__grid{
     .catname{top:3px;}
 }
+
+.uk-accordion-content{max-height: 400px;
+    .scroll-content{padding-right:10px;}
+    .uk-active {
+        a{
+            color:$primary-color;
+            font-weight: bold;
+        }
+    }
+    ;}

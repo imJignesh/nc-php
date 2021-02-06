@@ -239,6 +239,11 @@
 
     .wtf-img {
         min-width: 50px;
+        img{width:50px !important;
+            height:50px !important;
+            object-fit: cover;
+            object-position: center center;
+        }
     }
 
 }

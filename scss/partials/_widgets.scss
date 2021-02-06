@@ -336,3 +336,19 @@ input:checked + .slider:before {
     }
 }
 
+.news-item-pro{
+    .news-img {
+        img{width:50px !important;
+            height:50px !important;
+            object-fit: cover;
+            object-position: center center;
+        }
+    }
+}
+
+.uk-comment-avatar{
+             width:80px !important;
+            height:80px !important;
+            object-fit: cover;
+            object-position: center center;
+}
