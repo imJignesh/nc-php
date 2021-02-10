@@ -352,3 +352,16 @@ input:checked + .slider:before {
             object-fit: cover;
             object-position: center center;
 }
+a.toggle{
+    position: relative; display: block; 
+   
+}
+
+ .inner {
+        overflow: hidden;
+        display: none;
+        border-left:4px solid #eee;
+        margin-left:5px;
+        a{ margin-left:8px; display: block;}
+        
+    }

@@ -796,6 +796,23 @@ input:checked + .slider:before {
      object-position: center center;
 }
 
+a.toggle {
+  position: relative;
+  display: block;
+}
+
+.inner {
+  overflow: hidden;
+  display: none;
+  border-left: 4px solid #eee;
+  margin-left: 5px;
+}
+
+.inner a {
+  margin-left: 8px;
+  display: block;
+}
+
 #whats__new {
   right: 0px;
   bottom: 40px;
