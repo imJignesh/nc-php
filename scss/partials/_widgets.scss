@@ -365,3 +365,16 @@ a.toggle{
         a{ margin-left:8px; display: block;}
         
     }
+
+    .lazy{margin:0;padding:0;
+        max-height: 100%;
+        li{display: block;}
+        a:hover,
+        a{color:#555;}
+    }
+    .accordian__wrap{max-height: 60vh;padding-right:15px;margin-bottom: 20px;;
+        @media(max-width:640px){
+            max-height: 100%;
+            padding-right:0;
+        }
+    }

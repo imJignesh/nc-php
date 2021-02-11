@@ -813,6 +813,34 @@ a.toggle {
   display: block;
 }
 
+.lazy {
+  margin: 0;
+  padding: 0;
+  max-height: 100%;
+}
+
+.lazy li {
+  display: block;
+}
+
+.lazy a:hover,
+.lazy a {
+  color: #555;
+}
+
+.accordian__wrap {
+  max-height: 60vh;
+  padding-right: 15px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 640px) {
+  .accordian__wrap {
+    max-height: 100%;
+    padding-right: 0;
+  }
+}
+
 #whats__new {
   right: 0px;
   bottom: 40px;
