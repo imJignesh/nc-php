@@ -378,3 +378,7 @@ a.toggle{
             padding-right:0;
         }
     }
+
+    .uk-subnav-pill>.uk-active>a{
+        background:$primary-color
+    }

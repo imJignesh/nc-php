@@ -841,6 +841,10 @@ a.toggle {
   }
 }
 
+.uk-subnav-pill > .uk-active > a {
+  background: #961b27;
+}
+
 #whats__new {
   right: 0px;
   bottom: 40px;
