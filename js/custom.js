@@ -78,15 +78,24 @@
 
   
 
-  $(window).scroll(function(e){
-    $('#sticky__posts').removeClass('open');
-  });
+  // $(window).scroll(function(e){
+  //   $('#sticky__posts').removeClass('open');
+  // });
 
   if($('#slide_toggle').length){
     $('#slide_toggle').click(function(e){
       e.preventDefault();
       $('#sticky__posts').toggleClass('open')
-    })
+    });
+    $('body').click(function() {
+      $("#sticky__posts").removeClass('open');
+  });
+  $('#sticky__posts').click(function(e) {
+    e.stopPropagation();
+});
+
+  
+
   }  if($('.filter__toggle').length){
     $('.filter__toggle').click(function(e){
       e.preventDefault();

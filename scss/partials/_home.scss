@@ -772,7 +772,12 @@
 .floting__popup{min-width:100px !important;
 a{color:#fff !important;}}
 .community__thumb{
+    img{width: 100%;}
     .uk-overlay{
         background: rgba(0,0,0,0.7) !important; color:#fff;}
 }
-    
+    #landingbanner{
+        .uk-modal-dialog{max-width:1000px !important; width:100%;
+            img{width:100%;}
+            }
+    }

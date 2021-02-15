@@ -180,6 +180,14 @@ html .uk-legend {
   color: #fff;
 }
 
+#masthead .uk-subnav li {
+  padding: 0 10px;
+}
+
+#masthead .uk-subnav li:hover > ul {
+  display: block;
+}
+
 #masthead .uk-background-primary {
   background-color: #951b28;
   padding: 5px;
@@ -1701,9 +1709,22 @@ a.toggle {
   color: #fff !important;
 }
 
+.community__thumb img {
+  width: 100%;
+}
+
 .community__thumb .uk-overlay {
   background: rgba(0, 0, 0, 0.7) !important;
   color: #fff;
+}
+
+#landingbanner .uk-modal-dialog {
+  max-width: 1000px !important;
+  width: 100%;
+}
+
+#landingbanner .uk-modal-dialog img {
+  width: 100%;
 }
 
 @media (max-width: 640px) {

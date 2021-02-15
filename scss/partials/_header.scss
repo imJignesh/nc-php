@@ -11,6 +11,15 @@
             }
         }
         a{color:#fff;}
+        li{
+            padding:0 10px;
+            &:hover{
+                >ul{
+                    display: block;
+                }
+        }
+     
+        }
     }
     .uk-background-primary {
         background-color: #951b28;
