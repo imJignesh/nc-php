@@ -2396,4 +2396,30 @@ article .alignnone {
   color: #961b27;
   font-weight: bold;
 }
+
+img.aligncenter {
+  margin: 10px auto;
+  display: block;
+}
+
+img.alignleft {
+  float: left;
+  display: block;
+  margin: 10px 10px 10px 0;
+}
+
+img.alignright {
+  float: right;
+  display: block;
+  margin: 10px 0 10px 10px;
+}
+
+img.size-full {
+  max-width: 100%;
+  display: block;
+}
+
+.article__area br + br {
+  display: none;
+}
 /*# sourceMappingURL=style.css.map */

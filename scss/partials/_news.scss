@@ -89,4 +89,31 @@ span{
             font-weight: bold;
         }
     }
-    ;}
+    }
+
+
+    img{
+        &.aligncenter {
+            margin: 10px auto;
+            display: block;
+        }
+        &.alignleft {
+            float: left;
+            display: block;
+            margin:10px 10px 10px 0;
+        }
+        &.alignright {
+           float:right;
+            display: block;
+            margin:10px 0 10px 10px;
+        }
+
+        &.size-full {
+            max-width:100%;
+            display: block;
+        }
+    }
+.article__area{
+    br+br{display:none}
+}
+    
