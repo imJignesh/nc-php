@@ -1719,7 +1719,7 @@ a.toggle {
 }
 
 #landingbanner .uk-modal-dialog {
-  max-width: 1000px !important;
+  max-width: 600px !important;
   width: 100%;
 }
 
@@ -2331,6 +2331,14 @@ article .alignnone {
   display: block;
 }
 
+.like__button {
+  color: #951b28;
+}
+
+.article__area {
+  max-width: 980px;
+}
+
 @media (max-width: 640px) {
   .article__area {
     padding-right: 10px;
@@ -2339,6 +2347,22 @@ article .alignnone {
 
 .article__area p, .article__area ul, .article__area li {
   font-size: 14px;
+}
+
+.article__area table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.article__area table td {
+  border: 1px solid #ccc;
+  padding: 4px;
+}
+
+.article__area .aligncenter {
+  margin: 10px auto;
+  display: block;
 }
 
 .uk-column-follow {
@@ -2395,31 +2419,5 @@ article .alignnone {
 .uk-accordion-content .uk-active a {
   color: #961b27;
   font-weight: bold;
-}
-
-img.aligncenter {
-  margin: 10px auto;
-  display: block;
-}
-
-img.alignleft {
-  float: left;
-  display: block;
-  margin: 10px 10px 10px 0;
-}
-
-img.alignright {
-  float: right;
-  display: block;
-  margin: 10px 0 10px 10px;
-}
-
-img.size-full {
-  max-width: 100%;
-  display: block;
-}
-
-.article__area br + br {
-  display: none;
 }
 /*# sourceMappingURL=style.css.map */

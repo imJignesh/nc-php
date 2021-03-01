@@ -41,13 +41,20 @@ article{
     .alignnone{margin:10px auto;display:block;}
 }
 
-
+.like__button{color:#951b28;}
 
 .article__area{
+    max-width:980px;
     @media(max-width:640px){
         padding-right:10px
     }
     p,ul,li{font-size:14px;}
+
+    table{border:1px solid #ccc;border-collapse: collapse;
+        width:100%;
+    td{border:1px solid #ccc;padding:4px;}
+    }
+    .aligncenter{margin: 10px auto;display: block;}
 }
 
 .uk-column-follow{width:100px; min-width:100px;
@@ -89,31 +96,5 @@ span{
             font-weight: bold;
         }
     }
-    }
+    ;}
 
-
-    img{
-        &.aligncenter {
-            margin: 10px auto;
-            display: block;
-        }
-        &.alignleft {
-            float: left;
-            display: block;
-            margin:10px 10px 10px 0;
-        }
-        &.alignright {
-           float:right;
-            display: block;
-            margin:10px 0 10px 10px;
-        }
-
-        &.size-full {
-            max-width:100%;
-            display: block;
-        }
-    }
-.article__area{
-    br+br{display:none}
-}
-    
