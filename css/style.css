@@ -1439,6 +1439,10 @@ a.toggle {
   min-height: 80px;
 }
 
+#events .event_list .event__caption a {
+  color: #000;
+}
+
 #events .event_list a {
   color: #666;
 }
@@ -1502,6 +1506,11 @@ a.toggle {
 #events .event__image .event__caption {
   background: #d2d2d2;
   padding-left: 60px;
+  color: #000;
+  font-weight: bold;
+}
+
+#events .event__image .event__caption a {
   color: #000;
 }
 
@@ -1747,6 +1756,13 @@ a.toggle {
 #profile_posts .profile__avatar {
   margin: 0 0 -40px 0px;
   padding: 5px;
+}
+
+#profile_posts .profile__avatar img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 150px;
+  max-height: 150px;
 }
 
 #profile_posts .profile__name i {
@@ -2262,8 +2278,51 @@ a.toggle {
   margin: 0 0 20px 0;
 }
 
+#events_section .uk-card {
+  height: 100%;
+  padding-bottom: 0px;
+  position: relative;
+}
+
+#events_section .uk-card > div {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 #events_section li {
   padding: 0px;
+}
+
+#events_section .event__caption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#events_section .event__caption a.uk-button {
+  display: inline-block;
+  max-width: 140px;
+}
+
+#events_section .event__caption .uk-overflow-hidden {
+  max-height: 60px;
+  margin-bottom: 10px;
 }
 
 .daterangepicker td.active, .daterangepicker td.active:hover {

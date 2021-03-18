@@ -542,9 +542,12 @@
             color: #000 !important;
         }
 
-        .event__caption {
+        .event__caption { 
             padding-left: 70px;
             min-height: 80px;
+            a{
+                color:#000;
+            }
         }
 
         a {
@@ -614,6 +617,10 @@
             background: #d2d2d2;
             padding-left: 60px;
             color: #000;
+            font-weight:bold;
+            a{
+                color:#000;
+            }
         }
 
         .uk-badge {

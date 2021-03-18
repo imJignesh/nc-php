@@ -16,6 +16,19 @@
 
 .filter__box{padding:0 0 20px 0 !important; border-bottom:1px solid #eee;border-left: 0; border-right: 0; margin:0 0 20px 0;}
 #events_section{
+    .uk-card{height:100%;padding-bottom: 0px;position: relative;;
+    &>div{
+        height:100%;  display: flex; flex:1; flex-direction: column;
+    }
+    }
     li{padding: 0px;;}
+    .event__caption{
+        display: flex; flex:1; flex-direction: column;
+        a.uk-button{
+           display: inline-block;
+           max-width: 140px;;
+        }
+        .uk-overflow-hidden{max-height:60px; margin-bottom: 10px;;}
+    }
 }
 .daterangepicker td.active, .daterangepicker td.active:hover{background-color: $primary-color !important;}

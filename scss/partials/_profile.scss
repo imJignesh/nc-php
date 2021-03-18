@@ -17,6 +17,7 @@
     .profile__avatar {
         margin: 0 0 -40px 0px;
         padding: 5px;
+            img{object-fit: cover; max-width:150px; max-height: 150px;}
     }
 
     .profile__name {
